@@ -1,0 +1,284 @@
+/* Navbar container */
+/*this creates nav bar*/
+h1 {
+  position: relative;
+  top: 50px; /*defining where the hr is positioned*/
+}
+
+#logo { /*where i should put the logo*/
+  background-image: url("https://internal.cs.ncl.ac.uk/modules/2018-19/csc1026/braille/css/braille.png");
+  background-repeat: no-repeat; /*need logo to be non - repeat*/
+  position: relative; /*need it to be relative to normal posistion*/
+  float: right; /*want the logo to be on the right*/
+  /*next three lines just places the logo in the right place*/
+  margin-top: 5px; /*defines the space between content and border*/
+  padding: 90px; /*space around it*/
+  padding-bottom: 0px; /*the spacing at the bottom*/
+}
+
+ul.nav { /*deining nav bar*/
+  padding: 0; /*spacing around it should be 0*/
+  background-color: #014687; /*change background color*/
+  position: relative; /*again position should be relative to screen*/
+  bottom: 56px; /*this defines where it should be placed*/
+}
+
+li.nav {
+  display: inline-block;
+  position: relative; /*defines how each item within the list should appear*/
+  left: 54%; /*as I want all the list to appear on the left hand side*/
+
+}
+
+ul.content {
+  position: absolute; /*we want content absolute under the dropbox*/
+  right: 0%; /*defines how i want it to be positioned*/
+  width: 150px; /*want it to be a little more spread out*/
+  display: none; /*set display to none inially */
+}
+
+li.nav a {
+  display: block; /*this defines that i want each link to be displayed as a block*/
+  padding: 14px 16px; /*defines spacing around it*/
+  text-decoration: none; /*removes the underline link thing*/
+  background-color: #014687; /*define the navigation*/
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif"; /*defines font*/
+  color: white; /*makes the color white*/
+}
+
+li.content {
+  display: block; /*how we want the content to look like*/
+}
+
+li.nav:hover a { /*setting the hover color*/
+  background-color: #2E7EAF;
+}
+
+li.content:hover a { /*setting the CONTENT hover color*/
+  background-color: #014687;
+}
+
+li.nav:hover ul.content { /*when you hover display the content as a block element*/
+  display: block;
+}
+
+hr {
+  background-color: #014687;
+  height: 15px; /*defines how each break line looks like*/
+  border: 0; /*defines the border*/
+  clear: both; /*stops it from affecting other content*/
+}
+
+body { /*the color of the background*/
+  background-color: #C8C2C2;
+}
+
+#contents {
+  min-width: 510px; /*defines min width*/
+  max-width: 960px; /*defines max width*/
+  margin: auto; /*this is what the content goes into*/
+  background-color: #ffffff; /*color should be white*/
+  position: absolute; /*positioned absolute relative to the body*/
+  left: 15%; /*place it 15% left so its in the centre*/
+}
+
+p {
+  /*holds many fonts ending with a generic font if font not found*/
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+  font-style: normal; /*defining style*/
+  padding: 5px; /*setting how text should look like*/
+  margin: 5px; /*the space between content and border*/
+}
+
+li { /*setting what list should look like*/
+  font-family: "Palatino Linotype", "Book Antiqua", "Palatino", "serif";
+  font-style: normal; /*defining style*/
+}
+
+h1, h2, h3, h4 {
+  color: #014687; /*how all the headings should appear*/
+  font-family: "Lucida Sans Unicode", "Book Antiqua", "Palatino", "serif";
+  font-style: normal; /*defining style*/
+  margin: 5px; /*defines the space*/
+}
+
+.breakline { /*defining a break line*/
+  border-bottom: 15px solid #014687;
+  clear: both; /*again making sure this does not affect other elements*/
+}
+
+/*History part */
+#videodiv { /*position video in the middle*/
+  position: relative; /*should be relative within box*/
+}
+
+#video-border {
+  width: 460px; /*how the border of the box should look like*/
+  height: 320px; /*how the height should be*/
+  background-image: url("https://internal.cs.ncl.ac.uk/modules/2018-19/csc1026/braille/css/460x320-box.png");
+  background-repeat: no-repeat; /*background should be far right*/
+  position: absolute; /*how border should be posistion relative to the body*/
+  top: 50px; /*defines how far from top*/
+  right: 10px;/*defines how far right*/
+}
+
+#paraHistory {
+  /*Next 2 lines is to allow the paragraph to place correctly also making space for video*/
+  width: 460px; /*defines width*/
+  height: 320px; /*defines height*/
+  float: right; /*where to position the history*/
+  padding: 20px; /*spacing*/
+}
+
+#tedSource {
+  font-size: 10px; /*defines font size*/
+  position: relative;   /* defines the content within the source and how it should appear */
+  left: 170px; /*how far left it should go*/
+}
+
+#tedSource1 {
+  font-size: 10px;
+  position: relative;  /*defines the content within the source and how it should appear*/
+  bottom: 10px; /*how far bottom it should go*/
+  left: 210px;
+}
+
+#video {
+  width: 420px; /*the width of video*/
+  height: 240px;  /*the height of video*/
+  margin: 15px 20px; /*how video should be placed*/
+  position: relative; /*positioned relative*/
+}
+
+/*System part*/
+#systemDiv {
+  position: relative; /*poisition the div*/
+}
+
+#border {
+  padding: 10px; /*spacing*/
+  border: double #8DAEC8; /*defines how border should look like*/
+  width: 420px; /*designs border*/
+  position: absolute; /* for absolute positioning */
+  top: 40px; /*how from top in relative to system div*/
+  left: 10px; /*how far from left in relation 10*/
+}
+
+#paraSystem {
+  width: 420px; /*defines system for paragraph*/
+  height: 1050px; /*defines where the paragraph should be positioned*/
+  float: left; /*makes it float left*/
+  padding: 30px; /*spacing*/
+}
+
+#line {
+  margin: auto 5%; /*defines the line which appears in the border*/
+  border-bottom: 2px solid #8DAEC8; /*makes the line, while defing color*/
+}
+
+#braillesystem {
+  width: 100%; /*how the image should appear*/
+}
+
+#wikiSource {
+  font-size: 10px; /*defines the source*/
+  position: relative; /*how it should be positioned*/
+  left: 100px; /*should be displayed on left*/
+}
+
+#wikiSource1 {
+  font-size: 10px; /*again define another source content*/
+  position: relative; /*this is relative*/
+  left: 110px; /*placed on the left*/
+}
+
+p.inl {
+  display: inline; /*each paragraph within the border should be an inline elements*/
+  font-size: 15px; /*font size*/
+}
+
+.structure {
+  /*again holds many fonts incase including a generic font incase it stops working*/
+  font-family: "Copperplate", "Copperplate Gothic Light", "fantasy", "serif"; /*defines the font*/
+}
+
+/*this part is for the English braille*/
+#flk-border {
+  width: 460px;
+  height: 370px; /*defines the border of the box*/
+  background-image: url("https://internal.cs.ncl.ac.uk/modules/2018-19/csc1026/braille/css/420x370-box.png");
+  background-repeat: no-repeat; /*make image not repeat*/
+  float: right; /*place right*/
+  position: relative; /*position relative*/
+  top: -30px; /*positioning purposes*/
+}
+
+#flk {
+  margin: 15px 20px; /*defines margin of actual image*/
+  position: relative;
+}
+
+/*defines each bullet point in the engligh grade as bold*/
+.grade {
+  font-weight: bold; /*change how some content appear within the paragraph*/
+}
+
+/*section is used to define  the letters sections*/
+.lettersNumbers {
+  margin-left: 10px; /*margin and spacing*/
+}
+
+.engImgs {
+  margin: 10px; /*how images should be speaced*/
+}
+
+.box {
+  width: 100px;
+  padding: 10px; /*defines the div bos where each corresponding paragraph and letter would stay*/
+  margin: 5px; /*margin around the box*/
+  border: solid #CBCBCB;
+  display: inline-block; /*make inline*/
+}
+
+p.labelBox {
+  background-color: #114A84;
+  color: #ffffff; /*defines how the label should appear*/
+  font-family: "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  font-size: 15px; /*defines font size*/
+  text-align: center; /*place this on the centre*/
+  margin: -10px; /*for positioning purposes*/
+}
+
+/*this sections to define numbers*/
+.engImgs1 {
+  margin: 15px; /*how the image should be positioned on the box*/
+}
+
+.box1 {
+  width: 190px; /*defines the width*/
+  padding: 10px; /*the spacing around the box*/
+  margin: 5px; /*how each box is positioned*/
+  border: solid #CBCBCB; /*defines the border*/
+  display: inline-block; /*this is an inline block*/
+}
+
+p.labelBox1 {
+  background-color: #114A84;
+  color: #ffffff; /*the label for each box*/
+  font-family: "Copperplate", "Copperplate Gothic Light", "fantasy", "serif";
+  font-size: 15px; /*the font size*/
+  text-align: center; /*were the text should be placed*/
+  margin: -10px;
+}
+
+/*changes the colour of the title "numbers" and "letters"*/
+.twoOff {
+  color: #CC2753; /*defines the color*/
+}
+
+/*below is the section for css*?
+
+/* Here we move the information were we got to the right hand side*/
+#source {
+  text-align: right; /*put text at right hand side corner*/
+}
